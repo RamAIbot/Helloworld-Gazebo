@@ -1,3 +1,0 @@
-/home/robond/Project2/script/CMakeFiles/edit_cache.dir
-/home/robond/Project2/script/CMakeFiles/rebuild_cache.dir
-/home/robond/Project2/script/CMakeFiles/hello.dir

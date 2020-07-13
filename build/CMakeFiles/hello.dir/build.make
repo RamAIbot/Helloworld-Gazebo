@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robond/Project2
+CMAKE_SOURCE_DIR = /home/robond/Udacity
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robond/Project2/script
+CMAKE_BINARY_DIR = /home/robond/Udacity/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hello.dir/depend.make
@@ -57,38 +57,38 @@ include CMakeFiles/hello.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/hello.dir/flags.make
 
-CMakeFiles/hello.dir/hello.cpp.o: CMakeFiles/hello.dir/flags.make
-CMakeFiles/hello.dir/hello.cpp.o: hello.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robond/Project2/script/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello.dir/hello.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/hello.cpp.o -c /home/robond/Project2/script/hello.cpp
+CMakeFiles/hello.dir/script/hello.cpp.o: CMakeFiles/hello.dir/flags.make
+CMakeFiles/hello.dir/script/hello.cpp.o: ../script/hello.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robond/Udacity/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello.dir/script/hello.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/script/hello.cpp.o -c /home/robond/Udacity/script/hello.cpp
 
-CMakeFiles/hello.dir/hello.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello.dir/hello.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robond/Project2/script/hello.cpp > CMakeFiles/hello.dir/hello.cpp.i
+CMakeFiles/hello.dir/script/hello.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello.dir/script/hello.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robond/Udacity/script/hello.cpp > CMakeFiles/hello.dir/script/hello.cpp.i
 
-CMakeFiles/hello.dir/hello.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello.dir/hello.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robond/Project2/script/hello.cpp -o CMakeFiles/hello.dir/hello.cpp.s
+CMakeFiles/hello.dir/script/hello.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello.dir/script/hello.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robond/Udacity/script/hello.cpp -o CMakeFiles/hello.dir/script/hello.cpp.s
 
-CMakeFiles/hello.dir/hello.cpp.o.requires:
+CMakeFiles/hello.dir/script/hello.cpp.o.requires:
 
-.PHONY : CMakeFiles/hello.dir/hello.cpp.o.requires
+.PHONY : CMakeFiles/hello.dir/script/hello.cpp.o.requires
 
-CMakeFiles/hello.dir/hello.cpp.o.provides: CMakeFiles/hello.dir/hello.cpp.o.requires
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.o.provides.build
-.PHONY : CMakeFiles/hello.dir/hello.cpp.o.provides
+CMakeFiles/hello.dir/script/hello.cpp.o.provides: CMakeFiles/hello.dir/script/hello.cpp.o.requires
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/script/hello.cpp.o.provides.build
+.PHONY : CMakeFiles/hello.dir/script/hello.cpp.o.provides
 
-CMakeFiles/hello.dir/hello.cpp.o.provides.build: CMakeFiles/hello.dir/hello.cpp.o
+CMakeFiles/hello.dir/script/hello.cpp.o.provides.build: CMakeFiles/hello.dir/script/hello.cpp.o
 
 
 # Object files for target hello
 hello_OBJECTS = \
-"CMakeFiles/hello.dir/hello.cpp.o"
+"CMakeFiles/hello.dir/script/hello.cpp.o"
 
 # External object files for target hello
 hello_EXTERNAL_OBJECTS =
 
-libhello.so: CMakeFiles/hello.dir/hello.cpp.o
+libhello.so: CMakeFiles/hello.dir/script/hello.cpp.o
 libhello.so: CMakeFiles/hello.dir/build.make
 libhello.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
@@ -147,7 +147,7 @@ libhello.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
 libhello.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
 libhello.so: CMakeFiles/hello.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robond/Project2/script/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libhello.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robond/Udacity/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libhello.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -155,7 +155,7 @@ CMakeFiles/hello.dir/build: libhello.so
 
 .PHONY : CMakeFiles/hello.dir/build
 
-CMakeFiles/hello.dir/requires: CMakeFiles/hello.dir/hello.cpp.o.requires
+CMakeFiles/hello.dir/requires: CMakeFiles/hello.dir/script/hello.cpp.o.requires
 
 .PHONY : CMakeFiles/hello.dir/requires
 
@@ -164,6 +164,6 @@ CMakeFiles/hello.dir/clean:
 .PHONY : CMakeFiles/hello.dir/clean
 
 CMakeFiles/hello.dir/depend:
-	cd /home/robond/Project2/script && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robond/Project2 /home/robond/Project2 /home/robond/Project2/script /home/robond/Project2/script /home/robond/Project2/script/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robond/Udacity/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robond/Udacity /home/robond/Udacity /home/robond/Udacity/build /home/robond/Udacity/build /home/robond/Udacity/build/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hello.dir/depend
 

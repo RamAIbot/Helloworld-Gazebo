@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robond/Project2
+CMAKE_SOURCE_DIR = /home/robond/Udacity
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robond/Project2/script
+CMAKE_BINARY_DIR = /home/robond/Udacity/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robond/Project2/script/CMakeFiles /home/robond/Project2/script/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robond/Udacity/build/CMakeFiles /home/robond/Udacity/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robond/Project2/script/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robond/Udacity/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ hello/fast:
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
-hello.o: hello.cpp.o
+script/hello.o: script/hello.cpp.o
 
-.PHONY : hello.o
+.PHONY : script/hello.o
 
 # target to build an object file
-hello.cpp.o:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.o
-.PHONY : hello.cpp.o
+script/hello.cpp.o:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/script/hello.cpp.o
+.PHONY : script/hello.cpp.o
 
-hello.i: hello.cpp.i
+script/hello.i: script/hello.cpp.i
 
-.PHONY : hello.i
+.PHONY : script/hello.i
 
 # target to preprocess a source file
-hello.cpp.i:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.i
-.PHONY : hello.cpp.i
+script/hello.cpp.i:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/script/hello.cpp.i
+.PHONY : script/hello.cpp.i
 
-hello.s: hello.cpp.s
+script/hello.s: script/hello.cpp.s
 
-.PHONY : hello.s
+.PHONY : script/hello.s
 
 # target to generate assembly for a file
-hello.cpp.s:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.s
-.PHONY : hello.cpp.s
+script/hello.cpp.s:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/script/hello.cpp.s
+.PHONY : script/hello.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
-	@echo "... hello.o"
-	@echo "... hello.i"
-	@echo "... hello.s"
+	@echo "... script/hello.o"
+	@echo "... script/hello.i"
+	@echo "... script/hello.s"
 .PHONY : help
 
 

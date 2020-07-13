@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/robond/Project2/script/CMakeFiles/CMakeTmp
+Change Dir: /home/robond/Udacity/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5e014/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5e014.dir/build.make CMakeFiles/cmTC_5e014.dir/build
-make[1]: Entering directory '/home/robond/Project2/script/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5e014.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_5e014.dir/CheckSymbolExists.c.o   -c /home/robond/Project2/script/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_5e014
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e014.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_5e014.dir/CheckSymbolExists.c.o  -o cmTC_5e014 -rdynamic 
-CMakeFiles/cmTC_5e014.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_a0e6a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a0e6a.dir/build.make CMakeFiles/cmTC_a0e6a.dir/build
+make[1]: Entering directory '/home/robond/Udacity/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0e6a.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_a0e6a.dir/CheckSymbolExists.c.o   -c /home/robond/Udacity/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a0e6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0e6a.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a0e6a.dir/CheckSymbolExists.c.o  -o cmTC_a0e6a -rdynamic 
+CMakeFiles/cmTC_a0e6a.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_5e014.dir/build.make:97: recipe for target 'cmTC_5e014' failed
-make[1]: *** [cmTC_5e014] Error 1
-make[1]: Leaving directory '/home/robond/Project2/script/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_5e014/fast' failed
-make: *** [cmTC_5e014/fast] Error 2
+CMakeFiles/cmTC_a0e6a.dir/build.make:97: recipe for target 'cmTC_a0e6a' failed
+make[1]: *** [cmTC_a0e6a] Error 1
+make[1]: Leaving directory '/home/robond/Udacity/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a0e6a/fast' failed
+make: *** [cmTC_a0e6a/fast] Error 2
 
-File /home/robond/Project2/script/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/robond/Udacity/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/robond/Project2/script/CMakeFiles/CMakeTmp
+Change Dir: /home/robond/Udacity/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_eca4d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_eca4d.dir/build.make CMakeFiles/cmTC_eca4d.dir/build
-make[1]: Entering directory '/home/robond/Project2/script/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_eca4d.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_eca4d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_eca4d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eca4d.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_eca4d.dir/CheckFunctionExists.c.o  -o cmTC_eca4d -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_71a95/fast"
+/usr/bin/make -f CMakeFiles/cmTC_71a95.dir/build.make CMakeFiles/cmTC_71a95.dir/build
+make[1]: Entering directory '/home/robond/Udacity/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71a95.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_71a95.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_71a95
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71a95.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_71a95.dir/CheckFunctionExists.c.o  -o cmTC_71a95 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_eca4d.dir/build.make:97: recipe for target 'cmTC_eca4d' failed
-make[1]: *** [cmTC_eca4d] Error 1
-make[1]: Leaving directory '/home/robond/Project2/script/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_eca4d/fast' failed
-make: *** [cmTC_eca4d/fast] Error 2
+CMakeFiles/cmTC_71a95.dir/build.make:97: recipe for target 'cmTC_71a95' failed
+make[1]: *** [cmTC_71a95] Error 1
+make[1]: Leaving directory '/home/robond/Udacity/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_71a95/fast' failed
+make: *** [cmTC_71a95/fast] Error 2
 
 
