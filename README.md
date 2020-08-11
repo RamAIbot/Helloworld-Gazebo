@@ -10,12 +10,13 @@ Robotics Software Engineering
  
  ```
  mkdir build
- cd script
+ cd build
  cmake ../
  make
  cd ../world
- gazebo MyHome.world
- 
+ export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/robond/Udacity/build
+ gazebo MyHome.world 
+ //for detailed exexution logs use gazebo MyHome.world --verbose
  ```
  
  
