@@ -19,6 +19,13 @@ Robotics Software Engineering
  //for detailed exexution logs use gazebo MyHome.world --verbose
  ```
  
+ <h2> Output </h2>
+ 
+ <h3> The World with the model </h3>
+ <img src="ros3.JPG" alt="World Image"/>
+ <h3> Welcome to my world in terminal </h3>
+ <img src="ros4.JPG" alt="Hello world"/>
+ 
  
  
  
